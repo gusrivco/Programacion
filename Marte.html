@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Tu peso en Marte </title>
+  <style type="text/css">
+    body{
+      background-color: #AAAAFF;
+      color: white;
+      font-family: Helvetica;
+    }
+    strong{
+      background-color: #FFAAAA;
+    }
+  </style>
+
+</head>
+<body>
+  <h1>Tu peso en otro planeta</h1>
+  <p>En la tierra pesas distinto que en <strong>Marte</strong>  </p>
+
+<script type="text/javascript">
+  var usuario = prompt("Cual es tu peso");
+  var peso = parseInt(usuario);
+  var g_tierra = 9.8;
+  var g_marte = 3.7;
+  var g_jupiter = 24.8;
+
+  var peso_final;
+  peso_final = peso * g_marte / g_tierra;
+  peso_final = parseInt(peso_final);
+  alert(peso_final);
+  document.write("Tu peso en Marte corresponde a <strong>" + peso_final + " Kilos </strong>");
+</script>
+</body>
+</html>
